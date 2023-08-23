@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Baraja">
+  <ClassDiagramComponents>
+    <Class name="carta" package="" visibility="public" xPosition="60.0" yPosition="49.0">
+      <Fields>
+        <Field name="num" type="int" visibility="private"/>
+        <Field name="palo" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="toString" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="baraja" package="" visibility="public" xPosition="435.0" yPosition="49.0">
+      <Fields>
+        <Field name="carta" type="ArrayList" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="barajar" returnType="void" visibility="public"/>
+        <Method name="untitledMethod" returnType="void" visibility="public"/>
+        <Method name="siguienteCarta" returnType="carta" visibility="public"/>
+        <Method name="cartasDisponibles" returnType="void" visibility="public"/>
+        <Method name="darCartas" returnType="int" visibility="public"/>
+        <Method name="cartasMonton" returnType="void" visibility="public"/>
+        <Method name="mostrarBaraja" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="UntitledClass2" package="" visibility="public" xPosition="323.0" yPosition="398.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="Tiene" source="baraja" target="carta" type="Composition" sourceCardinality="0..1" targetCardinality="1..*" collectionType="ArrayList"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
